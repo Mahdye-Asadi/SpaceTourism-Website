@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        
+        <title>Frontend Mentor | Space tourism website</title>
+
+        <link rel="stylesheet" type="text/css" href="./technology.css">
+        <link rel="icon" type="image.png" href="starter-code/assets/favicon-32x32.png">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="starter-code/assets/shared/logo.svg" alt="star-logo">
+            <hr class="first-hr">
+            <button id="openbtn" onclick="openbtn()">&#9776;</button>
+            <div class="navbar sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html" class="link" id="home"><button><span>00</span> HOME</button></nav></a></li>
+                        <li><a href="./destination.html" class="link"><button><span>01</span> DESTINATION</button></a></li>
+                        <li><a href="./crew.html" class="link" id="crewnav"><button><span>02</span> CREW</button></a></li>
+                        <li><a href="./technology.html" class="link" id="tech"><button><span>03</span> TECHNOLOGY</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sideNav hidden" id="sidenav">
+                <a href="#" class="closebtn" onclick="closebtn()"> &#10006; </a>
+                <a href="./index.html" class="link2" id="home2"><button><span>00</span> HOME</button></a>
+                <a href="./destination.html" class="link2"><button><span>01</span> DESTINATION</button></a>
+                <a href="./crew.html" class="link2"><button><span>02</span> CREW</button></a>
+                <a href="./technology.html" class="link2"><button><span>03</span> TECHNOLOGY</button></a>
+            </div>
+        </header>
+
+        <div class="technology">
+            <h4><span>03</span> SPACE LAUNCH 101</h4>
+            <div class="main-mission">
+                <div class="btns">
+                    <button id="launch" class="first" onclick="showTech('.main-launch')">1</button>
+                    <button id="spaceport" onclick="showTech('.main-port')">2</button>
+                    <button id="capsule" onclick="showTech('.main-capsule')">3</button>
+                </div>
+
+                <div class="main-launch">
+                    <div class="launch">
+                        <h5>THE TERMINOLOGY...</h5>
+                        <h2>LAUNCH VEHICLE</h2>
+                        <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, 
+                            usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. 
+                            Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                    </div>
+                    <div>
+                        <img src="starter-code/assets/technology/image-launch-vehicle-portrait.jpg" alt="launch-vehicle">
+                    </div>
+                </div>
+
+                <div class="main-port hide">
+                    <div class="spaceport">
+                        <h5>THE TERMINOLOGY...</h5>
+                        <h2>SPACEPORT</h2>
+                        <p>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+                            by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, 
+                            our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
+                    </div>
+                    <div>
+                        <img src="starter-code/assets/technology/image-spaceport-portrait.jpg" alt="spaceprt">
+                    </div>
+                </div>
+
+                <div class="main-capsule hide">
+                    <div class="capsule">
+                        <h5>THE TERMINOLOGY...</h5>
+                        <h2>SPACE CAPSULE</h2>
+                        <p>A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. 
+                            It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+                    </div>
+                    <div>
+                        <img src="starter-code/assets/technology/image-space-capsule-portrait.jpg" alt="space-capsule">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>

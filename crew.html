@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        
+        <title>Frontend Mentor | Space tourism website</title>
+
+        <link rel="stylesheet" type="text/css" href="./crew.css">
+        <link rel="icon" type="image.png" href="starter-code/assets/favicon-32x32.png">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="starter-code/assets/shared/logo.svg" alt="star-logo">
+            <hr class="first-hr">
+            <button id="openbtn" onclick="openbtn()">&#9776;</button>
+            <div class="navbar sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html" class="link" id="home"><button><span>00</span> HOME</button></nav></a></li>
+                        <li><a href="./destination.html" class="link"><button><span>01</span> DESTINATION</button></a></li>
+                        <li><a href="./crew.html" class="link" id="crewnav"><button><span>02</span> CREW</button></a></li>
+                        <li><a href="./technology.html" class="link"><button><span>03</span> TECHNOLOGY</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sideNav hidden" id="sidenav">
+                <a href="#" class="closebtn" onclick="closebtn()"> &#10006; </a>
+                <a href="./index.html" class="link2" id="home2"><button><span>00</span> HOME</button></a>
+                <a href="./destination.html" class="link2"><button><span>01</span> DESTINATION</button></a>
+                <a href="./crew.html" class="link2"><button><span>02</span> CREW</button></a>
+                <a href="./technology.html" class="link2"><button><span>03</span> TECHNOLOGY</button></a>
+            </div>
+        </header>
+        <div class="crew">
+            <h4 id="meet"><span>02</span> MEET YOUR CREW</h4>
+            <div class="main-commander">
+                <div class="commander">
+                    <h3>COMMANDER</h3>
+                    <h2>DOUGLAS HURLEY</h2>
+                    <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. 
+                        He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                </div>
+                <hr class="line">
+                <div class="douglas">
+                    <img src="starter-code/assets/crew/image-douglas-hurley.png">
+                </div>
+            </div>
+            
+            <div class="main-specialist hide">
+                <div class="specialist">
+                    <h3>MISSION SPECIALIST</h3>
+                    <h2>MARK SHUTTLEWORTH</h2>
+                    <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. 
+                        Shuttleworth became the first South African to travel to space as a space tourist.</p>
+                </div>
+                <hr class="line">
+                <div class="mark">
+                    <img src="starter-code/assets/crew/image-mark-shuttleworth.png">
+            
+                </div>
+            </div>
+    
+            <div class="main-pilot hide">
+                <div class="pilot">
+                    <h3>PILOT</h3>
+                    <h2>VICTOR GLOVER</h2>
+                    <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. 
+                        Glover is a commander in the U.S. Navy where he pilots an F/A-18.
+                        He was a crew member of Expedition 64, and served as a station systems flight engineer.</p>
+                </div>
+                <hr class="line">
+                <div class="victor">
+                    <img src="starter-code/assets/crew/image-victor-glover.png">
+                </div>
+            </div>
+    
+            <div class="main-engineer hide">
+                <div class="engineer">
+                    <h3>FLIGHT ENGINEER</h3>
+                    <h2>ANOUSHE ANSARI</h2>
+                    <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+                        Ansari was the fourth self-funded space tourist, 
+                        the first self-funded woman to fly to the ISS, and the first Iranian in space.</p>
+                </div>
+                <hr class="line">
+                <div class="anousheh">
+                    <img src="starter-code/assets/crew/image-anousheh-ansari.png">
+                </div>
+            </div>
+    
+            <div class="changebtn">
+                <button id="commander" onclick="showCrew('.main-commander')"></button>
+                <button id="specialist" onclick="showCrew('.main-specialist')"></button>
+                <button id="pilot" onclick="showCrew('.main-pilot')"></button>
+                <button id="engineer" onclick="showCrew('.main-engineer')"></button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>

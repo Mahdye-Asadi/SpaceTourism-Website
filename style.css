@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    font-family: 'Bellefair';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    height: 80px;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    letter-spacing: 0.1rem;
+    margin: 10px 25px;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5 {
+    color:rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 150px;
+    font-weight:400;
+    padding-bottom: 2%;
+}
+
+h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    font-weight:200;
+}
+
+p {
+    font-size: 18px;
+    font-family:  'Barlow';
+    font-weight:200;
+    line-height: 1.8em;
+    width:46%;
+    color:#D0D6F9;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5c585832;
+    width: 58%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    font-weight: 100;
+}
+
+.logo {
+    margin-left: 3%;
+    width: 40px;
+}
+
+.first-hr {
+    z-index: 1;
+    width: 34%;
+    height: 0.5%;
+    border-color: #ffffff44;
+    margin-right: -5%;
+}
+
+.navbar ul {
+    display:flex;
+}
+
+.link span {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;  
+    margin-right: 10px; 
+}
+
+.link:hover {
+    border-bottom: 0.2rem solid rgb(166, 164, 164);
+    padding-bottom: 23px;
+}
+
+.first-page {
+    position: absolute;
+    left:10%;
+    top:35%;
+    display:flex;
+}
+
+.first-page .explore {
+    margin-right : 23%;
+    margin-top: 18%;
+}
+
+.first-page a {
+    font-size: 25px;
+    font-family: 'Bellefair';
+    color:rgb(11,13,23);
+    padding: 70% 35%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.first-page a:hover {
+    outline: 50px solid rgba(45, 48, 61, 0.805);
+    transition: 0.3s;
+}
+
+.explore a {
+    text-decoration: none;
+}
+
+/* each DESKTOP , MOBILE */
+@media screen and (min-width: 1024px) and (max-width: 1780px) {
+    body {
+        background-image: url("starter-code/assets/home/background-home-desktop.jpg");
+        background-size: 100% auto;
+    }
+
+    #home {
+        border-bottom: 0.2rem solid rgb(255, 255, 255);
+        padding-bottom: 23px;
+    }
+
+    .sideNav, #openbtn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 728px) {
+    body {
+        background-image: url("starter-code/assets/home/background-home-mobile.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+    
+    #home2 {
+        border-right: 5px solid rgb(255, 255, 255);
+    }
+
+    .hidden, .navbar, .first-hr {
+        display:none;
+    }
+    
+    .logo {
+        width: 40px;
+        margin-left: 20px;
+    }
+
+    #sidenav {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0%;
+        background-color: #5c585832;
+        width:70%;
+        backdrop-filter: blur(20px);
+        z-index: 2;
+    }
+
+    .sideNav a {
+        display: block;
+        margin-top: 12px;
+        transition: all 0.3s;
+    }
+
+    .sideNav .closebtn {
+        margin-left: 80%;
+        margin-bottom:20px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    .link2:hover {
+        border-right: 5px solid rgb(255, 255, 255);
+    }
+
+    #openbtn {
+        font-size: 30px;
+    }
+
+    .text {
+        margin-top: -120px;
+    }
+    
+    .first-page {
+        flex-direction: column;
+        text-align: center;
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+    
+    .first-page h1 {
+        font-size: 80px;
+        margin: 15px 0;
+    }
+
+    .first-page h5 {
+        font-size: 12px;
+    }
+
+    .first-page p {
+        text-align: center;
+        font-size: 19px;
+        width: 96%;
+        line-height: 25px;
+        margin-left: 3%;
+    }
+    
+    .first-page a {
+        font-size:20px;
+        padding: 30% 15%;
+    }
+
+    .explore {
+        margin-left:22%;
+        padding-top:22%;
+    }
+}
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

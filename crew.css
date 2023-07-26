@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url("starter-code/assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-family: 'Bellefair';
+}
+
+#crewnav {
+    border-bottom: 0.2rem solid rgb(255, 255, 255);
+    padding-bottom: 23px;  
+}
+
+li {
+    list-style: none;
+}
+
+.line {
+    display: none;
+}
+
+.hide {
+    display:none;
+}
+
+#openbtn {
+    display:none;
+}
+
+.hidden {
+    display:none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    height: 80px;
+}
+
+button {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    letter-spacing: 0.1rem;
+    margin: 10px 25px;
+    cursor: pointer;
+}
+
+h2, h4 {
+    color:rgb(255, 255, 255);
+}
+
+h3 {
+    font-weight: 100;
+    color: rgb(163, 161, 161);
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 55px;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    font-family:  'Barlow';
+    font-weight:200;
+    line-height: 1.8em;
+    width:30%;
+    color:#D0D6F9;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5c585832;
+    width: 58%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    font-weight: 100;
+}
+
+.logo {
+    margin-left: 3%;
+    width: 40px;
+}
+
+.first-hr {
+    z-index: 1;
+    width: 34%;
+    height: 0.5%;
+    border-color: #ffffff44;
+    margin-right: -5%;
+}
+
+.navbar ul {
+    display:flex;
+}
+
+.link span {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;  
+    margin-right: 10px; 
+}
+
+.link:hover {
+    border-bottom: 0.2rem solid rgb(166, 164, 164);
+    padding-bottom: 23px;
+}
+
+#meet {
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 28px;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    margin-top:5%;
+    margin-left:9%;
+}
+
+#meet span {
+    color: rgb(68, 68, 68);
+    padding-right:10px;
+    text-align: center;
+    justify-content: center; 
+    font-weight: 600;
+}
+
+.commander, .specialist, .pilot, .engineer {
+    position: absolute;
+    bottom: 20%;
+}
+
+.changebtn {
+    position: absolute;
+    top:90%;
+    left:8%;
+}
+
+.changebtn button{
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(69, 69, 69);
+    padding: 6px;
+    margin-right: 1px;
+}
+
+.changebtn button:hover {
+    background-color: #808080;
+}
+
+.main-commander, .main-specialist, .main-pilot, .main-engineer {
+    padding: 0 9%;
+    margin: 1% 0;
+}
+
+.douglas img {
+    width: 400px;
+    height: 550px;
+    position: absolute;
+    left: 56%;
+    bottom:0;
+}
+
+#commander {
+    background-color: white;
+}
+/* specialist */
+.mark img {
+    position: absolute;
+    bottom: 0;
+    left: 56%;
+    width: 350px;
+    height: 500px;
+}
+
+.victor img {
+    position: absolute;
+    bottom: 0;
+    left: 57%;
+    width: 450px;
+    height: 500px;
+}
+
+.pilot p {
+    width: 40%;
+}
+
+.anousheh img {
+    position: absolute;
+    bottom: 0;
+    left: 56%;
+    width: 450px;
+    height: 480px;
+}
+
+@media screen and (max-width: 426px) {
+    .navbar, .first-hr {
+        display: none;
+    }
+
+    body {
+        background-image:url("starter-code/assets/crew/background-crew-mobile.jpg");
+    }
+
+    .douglas img {
+        width: 45%;
+        height: 30%;
+        position: absolute;
+        top: 20%;
+        left: 32%;
+    }
+
+    .mark img {
+        width: 40%;
+        height: 30%;
+        position: absolute;
+        top: 20%;
+        left: 32%;
+    }
+
+    .victor img {
+        width: 48%;
+        height: 30%;
+        position: absolute;
+        top: 20%;
+        left: 26%;
+    }
+
+    .anousheh img {
+        width: 56%;
+        height: 30%;
+        position: absolute;
+        top: 20%;
+        left: 23%;
+    }
+
+
+    .line {
+        display: block;
+        border-color: #808080;
+        margin-top: 80%;
+    }
+    
+    .sideNav {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0%;
+        background-color: #5c585832;
+        width:70%;
+        backdrop-filter: blur(20px);
+        z-index: 2;
+    }
+    
+    .sideNav a {
+        display: block;
+        margin-top: 12px;
+        transition: all 0.3s;
+    }
+    
+    .sideNav .closebtn {
+        margin-left: 80%;
+        margin-bottom: 20px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    
+    .link2:hover {
+        border-right: 5px solid rgb(255, 255, 255);
+    }
+    
+    #openbtn {
+        display:block;
+        font-size: 30px;
+    }
+
+    .commander, .specialist, .pilot, .engineer {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 25px;
+        width: 90%;
+    }
+
+    h3 {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    p {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .pilot {
+        margin-bottom: -90px;
+    }
+
+    .pilot p {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .logo {
+        margin-left: 7%;
+    }
+
+    #meet {
+        font-size: 16px;
+        margin-top:-2px;
+        margin-left: 25%;
+    }
+
+    .changebtn {
+        position: absolute;
+        left: 30%;
+        top: 53%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .changebtn button {
+        margin-right:-10px;
+    }
+    
+    .commander {
+        margin-bottom: -40px;
+    }
+
+    .specialist, .engineer {
+        margin-bottom: -70px;
+    }
+}

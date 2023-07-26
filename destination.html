@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        
+        <title>Frontend Mentor | Space tourism website</title>
+
+        <link rel="stylesheet" type="text/css" href="./destination.css">
+        <link rel="icon" type="image.png" href="starter-code/assets/favicon-32x32.png">
+    </head>
+
+    <body>
+        <div class="destinations">
+            <header>
+                <img class="logo" src="starter-code/assets/shared/logo.svg" alt="star-logo">
+                <hr class="first-hr">
+                <button id="openbtn" onclick="openbtn()">&#9776;</button>
+                <div class="navbar sidebar">
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html" class="link" onclick="navBar()"><button><span>00</span> HOME</button></a></li>
+                            <li><a href="./destination.html" class="link" id="destin" onclick="navBar()"><button><span>01</span> DESTINATION</button></a></li>
+                            <li><a href="./crew.html" class="link" onclick="navBar()"><button><span>02</span> CREW</button></a></li>
+                            <li><a href="./technology.html" class="link" onclick="navBar()"><button><span>03</span> TECHNOLOGY</button></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sideNav hidden" id="sidenav">
+                    <a href="#" class="closebtn" onclick="closebtn()"> &#10006; </a>
+                    <a href="./index.html" class="link2"><button><span>00</span> HOME</button></nav></a>
+                    <a href="./destination.html" class="link2" id="destination"><button><span>01</span> DESTINATION</button></a>
+                    <a href="./crew.html" class="link2"><button><span>02</span> CREW</button></a>
+                    <a href="./technology.html" class="link2"><button><span>03</span> TECHNOLOGY</button></a>
+                </div>
+            </header>
+            <div>
+                <h4 id="pick"><span>01</span> PICK     YOUR     DESTINATION</h4>
+            </div>
+
+            <div class="planets">
+                <ul>
+                    <li><a id="moon" onclick="showplanet('.main-moon')">MOON</a></li>
+                    <li><a id="mars" onclick="showplanet('.main-mars')">MARS</a></li>
+                    <li><a id="europa" onclick="showplanet('.main-europa')">EUROPA</a></li>
+                    <li><a id="titan" onclick="showplanet('.main-titan')">TITAN</a></li>
+                </ul>
+            </div>
+
+            <div class="main-moon">
+                <div>
+                    <img src="starter-code/assets/destination/image-moon.png">
+                </div>
+                <div class="moon">
+                    <h1>MOON</h1>
+                    <p class="text">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective
+                        and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo
+                        11 landing sites.</p>
+                    <hr class="line">
+                    <div class="distime">
+                        <div class="distance">
+                            <p>AVG. DISTANCE</p>
+                            <h4>384,400 KM</h4>
+                        </div>
+                        <div class="time">
+                            <p>EST. TRAVEL TIME</p>
+                            <h4>3 DAYS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-mars hide">
+                <div>
+                    <img src="starter-code/assets/destination/image-mars.png">
+                </div>
+                <div class="mars">
+                    <h1>MARS</h1>
+                    <p class="text">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary 
+                        mountain in our solar system. It’s two and a half times the size of Everest!</p>
+                    <hr class="line">
+                    <div class="distime">
+                        <div class="distance">
+                            <p>AVG. DISTANCE</p>
+                            <h4>228 MIL. KM</h4>
+                        </div>
+                        <div class="time">
+                            <p>EST. TRAVEL TIME</p>
+                            <h4>9 MONTHS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-europa hide">
+                <div>
+                    <img src="starter-code/assets/destination/image-europa.png">
+                </div>
+                <div class="europa">
+                    <h1>EUROPA</h1>
+                    <p class="text">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface,
+                         it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+                    <hr class="line">
+                    <div class="distime">
+                        <div class="distance">
+                            <p>AVG. DISTANCE</p>
+                            <h4>628 MIL. KM</h4>
+                        </div>
+                        <div class="time">
+                            <p>EST. TRAVEL TIME</p>
+                            <h4>3 YEARS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-titan hide">
+                <div>
+                    <img src="starter-code/assets/destination/image-titan.png">
+                </div>
+                <div class="titan">
+                    <h1>TITAN</h1>
+                    <p class="text">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). 
+                        As a bonus, you get striking views of the Rings of Saturn.</p>
+                    <hr class="line">
+                    <div class="distime">
+                        <div class="distance">
+                            <p>AVG. DISTANCE</p>
+                            <h4>1.6 BIL. KM</h4>
+                        </div>
+                        <div class="time">
+                            <p>EST. TRAVEL TIME</p>
+                            <h4>7 YEARS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </body>
